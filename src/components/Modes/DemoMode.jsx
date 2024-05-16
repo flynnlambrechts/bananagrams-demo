@@ -13,7 +13,9 @@ function DemoMode(props) {
         const fetchData = async () => {
             try {
                 const response = await fetch(
-                    "/bananagrams-data/data-" + gameNumber + ".json"
+                    "bananagrams-demo/bananagrams-data/data-" +
+                        gameNumber +
+                        ".json"
                 );
                 const data = await response.json();
                 setGameData(data);
