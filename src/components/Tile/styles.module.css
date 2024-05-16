@@ -1,0 +1,22 @@
+.tile {
+    width: 30px;
+    height: 30px;
+    max-height: 50px;
+    max-width: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border-radius: 15%;
+    background-color: #E3CFAA;
+    color: black;
+}
+
+.blankTile {
+    opacity: 0;
+}
+
+.blankTile:hover {
+    opacity: 0.5;
+}
