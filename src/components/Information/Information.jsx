@@ -1,6 +1,14 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
+function Link({ href, children }) {
+    return (
+        <a target="_blank" style={{ textDecoration: "underline" }} href={href}>
+            {children}
+        </a>
+    );
+}
+
 function Information(props) {
     return (
         <>
@@ -11,13 +19,20 @@ function Information(props) {
                 The Engine is capable of rapidly winning the game in a
                 multiplayer and single player environment. An analytical report
                 on how we implemented this can be found&nbsp;
-                <a
-                    style={{ textDecoration: "underline" }}
-                    href="https://github.com/flynnlambrechts/bananagrams_engine_comp3821/blob/report/report.pdf">
+                <Link href="https://github.com/flynnlambrechts/bananagrams_engine_comp3821/blob/report/report.pdf">
                     here
-                </a>
+                </Link>
                 .
             </Typography>
+            <br />
+            <Typography>
+                The code for the engine itself can be found{" "}
+                <Link href="https://github.com/flynnlambrechts/bananagrams_engine_comp3821/">
+                    here
+                </Link>
+                .
+            </Typography>
+            <br />
             <Typography>
                 Due to the computation cost of running the engine for
                 potentially multiple users this is just a demo site for our

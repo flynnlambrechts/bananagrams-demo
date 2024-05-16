@@ -49,16 +49,15 @@ function DemoMode(props) {
         }
     };
 
-    console.log(gameNumber);
     return (
         <>
-            {gameData && (
+            {
                 <Base
-                    gameState={gameData[gameStep]}
+                    gameState={gameData && gameData[gameStep]}
                     handleStart={startGame}
                     game_running={() => running}
                 />
-            )}
+            }
         </>
     );
 }
