@@ -13,3 +13,13 @@ Bananagrams engine. The above illustrates a few examples of how
 the engine played in real games with a delay added between
 steps. In reality the engine could complete the game in less
 than 0.1s consistently.
+
+## Credits
+
+Credit to the following for their work on the backend engine.
+<ul>
+<li>Flynn Lambrechts</li>
+<li>Kyler Blackburn</li>
+<li>Julian Zincone</li>
+<li>Tim Tang</li>
+</ul>
